@@ -1,0 +1,328 @@
+body {
+	margin: 0;
+    background: #191919;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background: #FFF05A;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+    list-style: none;
+    text-align: right;
+    margin-right: 180px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #191919;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 8px;
+    font-weight: 650;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background: #FFD25A;
+    border-radius: 5px;
+}
+
+.home {
+    margin: 0;
+    height: 1000px;
+    background-image: url("home2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.filler {
+    height: 300px;
+}
+
+.hometext {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 70px;
+    margin-left: 28%;
+    width: 800px;
+    padding: 35px;
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.navheader {
+    height: 80px;
+}
+
+.about {
+    margin: 0;
+    margin-top: 50px;
+    width: auto;
+    font-weight: bold;
+}
+
+.profile {
+    background:black;
+    height: 280px;
+    width: 280px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 100px;
+    border-radius: 450px;
+    border-width: 0px;
+}
+
+.resume {
+    margin: 0;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.resumetable {
+    width: 600px;
+}
+
+.tableimages {
+    text-align: center;
+}
+
+.tabletext {
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    line-height: 2;
+}
+
+.resumeimg {
+    height: 130px;
+    width: 180px;
+}
+
+.portfolio {
+    margin: 0;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.portfolioimg {
+    height: 220px;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.portfoliolist {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.portfoliolinks:link, .portfoliolinks:visited, .portfoliolinks:active {
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: underline;   
+    color: white; 
+    font-size: 16px;
+}
+
+.skills {
+    margin: 0;
+    margin-top: 50px;
+    width: auto;
+    font-weight: bold;
+}
+
+.skillstable {
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    line-height: 2;
+}
+
+.skillsheader {
+    width: 500px;
+}
+
+.footer {
+    padding: 40px;
+    width: 80%;
+    height: 90px;
+    margin-left: 8%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 150px;
+    background: #FFF05A;
+    text-transform: uppercase;
+}
+
+.footertext {
+    margin-top: 15px;
+    margin-left: 44%;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: none;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.contact {
+    margin: 0;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+}
+
+.container {
+    padding: 40px;
+    width: 50%;
+    margin-left: 24%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 150px;
+    color: #191919;
+    background: #FFF05A;
+    border-radius: 12px;
+}
+
+.bordercontainer {
+    padding: 20px;
+    width: 70%;
+    margin-left: 14%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 0;
+    color: white;
+    background: #2A2A2A;
+}
+
+.containertext {
+    font-size: 15px;
+    font-style: normal;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-transform: none;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: normal;
+    padding-right: 80px;
+}
+
+.tabtext {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 13%;
+    width: 700px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+/* --- tab settings --- */
+
+/* hide radio buttons */
+input { 
+    display: none; 
+}
+
+/* show labels in line */
+input + label { 
+    display: inline-block;
+    color: #191919;
+    text-transform: none;
+    width: 200px;
+}
+
+/* box with rounded corner */
+input + label {            
+    border: 1px solid #191919;
+    background: #FFF05A;
+    padding: 12px;
+    margin-top: 30px;
+    border-radius: 2px 2px 0 0;
+    top: 1px;
+    text-transform: capitalize
+}
+
+input + label:hover {
+    cursor: pointer;
+    background: #FFD25A;
+}
+
+/* darkened background for selected tab */
+input:checked + label { 
+    background: #FFD25A;
+}
+
+/* --- tab settings for resume ---*/
+
+/* hide contents */
+input ~ .resumetab { 
+    display: none;
+}
+
+/* show contents only for selected tab */
+#education:checked ~ .resumetab.content1,
+#workexperience:checked ~ .resumetab.content2,
+#nationalservice:checked ~ .resumetab.content3 { 
+    display: inline-block;
+}
+
+/* grey line between tab and contents */
+input ~ .resumetab {        
+    padding: 12px;
+    text-transform: none;
+}
+
+/* --- tab settings for skills --- */
+
+/* hide contents */
+input ~ .skillstab { 
+    display: none;
+}
+
+/* show contents only for selected tab */
+#coding:checked ~ .skillstab.content1,
+#software:checked ~ .skillstab.content2,
+#miscellaneous:checked ~ .skillstab.content3 { 
+    display: block;
+    font-weight: normal;
+}
+
+/* grey line between tab and contents */
+input ~ .skillstab {        
+    padding: 12px;
+    text-transform: none;
+}
