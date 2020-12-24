@@ -45,7 +45,7 @@ nav a:hover {
 .home {
     margin: 0;
     height: 1000px;
-    background-image: url("home2.jpg");
+    background-image: url("resources/home2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
