@@ -15,10 +15,8 @@ body {
 nav ul {
     margin: 0;
     padding: 0;
-    margin-right: 80px;
     list-style: none;
-    text-align: right;
-    margin-right: 180px;
+    text-align: center;
 }
 
 nav li {
@@ -42,6 +40,12 @@ nav a:hover {
     border-radius: 5px;
 }
 
+@media screen and (max-width: 930px) {
+    .navbar {
+        height: 120px;
+    }
+}
+
 .home {
     margin: 0;
     height: 1000px;
@@ -49,6 +53,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    text-align: center;
 }
 
 .filler {
@@ -56,17 +61,37 @@ nav a:hover {
 }
 
 .hometext {
+    display: inline-block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 70px;
-    margin-left: 28%;
-    width: 800px;
-    padding: 35px;
+    width: 35%;
+    padding: 2%;
     color: white;
     border-width: 5px;
     border-style: solid;
     border-color: white;
+}
+
+@media screen and (max-width: 930px) {
+    .hometext {
+        font-size: 35px;
+    }
+
+    .filler {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .hometext {
+        font-size: 20px;
+    }
+
+    .filler {
+        height: 420px;
+    }
 }
 
 .navheader {
@@ -91,21 +116,26 @@ nav a:hover {
     border-width: 0px;
 }
 
+@media screen and (max-width: 890px) {
+    .profile {
+        height: 180px;
+        width: 180px;
+    }
+}
+
 .resume {
     margin: 0;
     margin-top: 50px;
     font-weight: bold;
 }
 
-.resumetable {
-    width: 600px;
-}
-
 .tableimages {
+    width: 10%;
     text-align: center;
 }
 
 .tabletext {
+    width: 50%;
     padding: 10px;
     padding-left: 30px;
     font-size: 15px;
@@ -124,22 +154,28 @@ nav a:hover {
     margin: 0;
     margin-top: 50px;
     font-weight: bold;
+    text-align: center;
+}
+
+.portfolioul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: justify;
+}
+
+.portfolioul li {
+    display: inline-block;
 }
 
 .portfolioimg {
     height: 220px;
-    width: 250px;
-    padding: 20px;
-    margin: 20px;
+    width: 280px;
 }
 
 .portfoliolist {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    display: inline-block;
     margin-top: 50px;
-    padding: 20px;
-    margin-left: 250px;
 }
 
 .portfoliolinks:link, .portfoliolinks:visited, .portfoliolinks:active {
@@ -169,7 +205,7 @@ nav a:hover {
 }
 
 .skillsheader {
-    width: 500px;
+    width: 1000px;
 }
 
 .footer {
@@ -203,10 +239,10 @@ nav a:hover {
 }
 
 .container {
-    padding: 40px;
-    width: 50%;
-    margin-left: 24%;
     text-align: center;
+    width: 80%;
+    margin-left: 8%;
+    padding: 40px;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 150px;
@@ -230,21 +266,19 @@ nav a:hover {
 .containertext {
     font-size: 15px;
     font-style: normal;
-    height: 350px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 50px;
     text-transform: none;
     text-align: justify;
     line-height: 1.5;
     font-weight: normal;
     padding-right: 80px;
+    padding-bottom: 30px;
 }
 
 .tabtext {
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 13%;
-    width: 700px;
     border-radius: 4px;
     border-style: solid;
     border-width: 3px;
@@ -284,6 +318,7 @@ input + label:hover {
 /* darkened background for selected tab */
 input:checked + label { 
     background: #FFD25A;
+    
 }
 
 /* --- tab settings for resume ---*/
@@ -326,3 +361,5 @@ input ~ .skillstab {
     padding: 12px;
     text-transform: none;
 }
+
+/* RESPONSIVE RULES */
