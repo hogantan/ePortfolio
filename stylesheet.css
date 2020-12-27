@@ -1,11 +1,11 @@
 body {
 	margin: 0;
-    background: #191919;
+    background: #A8DADC;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-    background: #FFF05A;
+    background: #F1FAEE;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -14,14 +14,15 @@ body {
 
 nav ul {
     margin: 0;
+    margin-right: 80px;
     padding: 0;
     list-style: none;
-    text-align: center;
+    text-align: right;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 80px;
     padding-top: 20px;
     position: relative;
 }
@@ -36,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #FFD25A;
+    background: #457B9D;
     border-radius: 5px;
 }
 
@@ -68,10 +69,10 @@ nav a:hover {
     font-size: 70px;
     width: 35%;
     padding: 2%;
-    color: white;
+    color: #F1FAEE;
     border-width: 5px;
     border-style: solid;
-    border-color: white;
+    border-color: #F1FAEE;
 }
 
 @media screen and (max-width: 930px) {
@@ -183,8 +184,12 @@ nav a:hover {
     font-style: normal;
     text-transform: none;
     text-decoration: underline;   
-    color: white; 
+    color: #F1FAEE; 
     font-size: 16px;
+}
+
+figcaption {
+    text-align: center;
 }
 
 .skills {
@@ -212,24 +217,24 @@ nav a:hover {
     margin: 0;
     margin-top: 50px;
     text-align: center;
-    width: auto;
-    height: auto;
     font-weight: bold;
 }
 
 .footer {
     display: inline-block;
     padding: 40px;
-    width: 80%;
+    width: 90%;
     height: 90px;
     font-size: 20px;
     font-weight: 150px;
-    background: #FFF05A;
+    color: #F1FAEE;
+    background: #457B9D;
     text-transform: uppercase;
     text-align: center;
 }
 
 .footertext {
+    color: #F1FAEE;
     display: inline-block;
     margin-top: 15px;
     font-size: 18px;
@@ -248,7 +253,7 @@ nav a:hover {
     font-size: 20px;
     font-weight: 150px;
     color: #191919;
-    background: #FFF05A;
+    background: #F1FAEE;
     border-radius: 12px;
 }
 
@@ -260,8 +265,8 @@ nav a:hover {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 0;
-    color: white;
-    background: #2A2A2A;
+    color: #F1FAEE;
+    background: #457B9D;
 }
 
 .containertext {
@@ -280,6 +285,7 @@ nav a:hover {
 .tabtext {
     font-size: 20px;
     margin-top: 20px;
+    border-color: #E63946;
     border-radius: 4px;
     border-style: solid;
     border-width: 3px;
@@ -302,23 +308,23 @@ input + label {
 
 /* box with rounded corner */
 input + label {            
-    border: 1px solid #191919;
-    background: #FFF05A;
+    border: 1px solid black;
+    background: #F1FAEE;
     padding: 12px;
     margin-top: 30px;
-    border-radius: 2px 2px 0 0;
+    border-radius: 4px;
     top: 1px;
     text-transform: capitalize
 }
 
 input + label:hover {
     cursor: pointer;
-    background: #FFD25A;
+    background: #457B9D;
 }
 
 /* darkened background for selected tab */
 input:checked + label { 
-    background: #FFD25A;
+    background: #457B9D;
     
 }
 
