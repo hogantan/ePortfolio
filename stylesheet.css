@@ -17,7 +17,7 @@ nav ul {
     margin-right: 80px;
     padding: 0;
     list-style: none;
-    text-align: right;
+    text-align: center;
 }
 
 nav li {
@@ -41,57 +41,15 @@ nav a:hover {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1020px) {
     .navbar {
         height: 120px;
     }
 }
 
-.home {
-    margin: 0;
-    height: 1000px;
-    background-image: url("resources/home2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    text-align: center;
-}
-
-.filler {
-    height: 300px;
-}
-
-.hometext {
-    display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 70px;
-    width: 35%;
-    padding: 2%;
-    color: #F1FAEE;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #F1FAEE;
-}
-
-@media screen and (max-width: 930px) {
-    .hometext {
-        font-size: 35px;
-    }
-
-    .filler {
-        height: 370px;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    .hometext {
-        font-size: 20px;
-    }
-
-    .filler {
-        height: 420px;
+@media screen and (max-width: 560px) {
+    .navbar {
+        height: 140px;
     }
 }
 
@@ -161,7 +119,7 @@ nav a:hover {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: justify;
+    text-align: center;
 }
 
 .portfolioul li {
@@ -169,8 +127,15 @@ nav a:hover {
 }
 
 .portfolioimg {
-    height: 220px;
-    width: 280px;
+    height: 250px;
+    width: 380px;
+}
+
+@media screen and (max-width: 1020px) {
+    .portfolioimg {
+        height: 200px;
+        width: 280px;
+    }
 }
 
 .portfoliolist {
